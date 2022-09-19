@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>CPSC332 Nathan Mautz</title>
+
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color:black;
+
+    }
+    a:hover{
+      font-size:400%;
+    }
+    img{
+      margin-right: auto;
+      transition: all ease-in-out 100ms;
+      display:block
+    }
+  </style>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function(){
+
+      var btn = document.getElementById("img_btn");
+      var img = document.getElementById("image");
+      var isSmall = false;
+      btn.addEventListener("click", function(){
+
+        if(isSmall){
+          img.style.scale="100%";
+          btn.textContent = "Shrink Image";
+          isSmall=false;
+        
+
+
+        }else{
+          img.style.scale="50%";
+          btn.textContent = "Enlarge Image";
+          isSmall=true;
+        }
+
+
+      })
+
+
+
+
+    })
+
+
+  </script>
+
+</head>
+
+<body>
+  
+  <h1>What I want to gain from this class</h1>
+  <p>
+    I learned most of what I know about web dev <em>on my own</em> so I am hoping that I will fill in some gaps and evantually hit some fresh content in <strong>November</strong>. 
+    <br> Below is an image of me at the end of the semester.
+  </p>
+  <img src="./webdevimg.jpeg" alt="Devloper working on code" width="400" id="image">
+  <p>
+    I found this very cool image 
+    <a href="https://www.onblastblog.com/front-lines-of-the-digital-era-how-to-become-a-web-developer/" target="_blank">
+      here!
+
+    </a>
+  </p>
+
+  <p>
+    <button id="img_btn">Shrink Image</button>
+  </p>
+</body>
+</html>
